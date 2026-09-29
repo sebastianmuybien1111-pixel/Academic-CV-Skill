@@ -1,0 +1,87 @@
+% Research-Focused Academic CV Template
+% Bundled with the academic-cv-editor skill.
+% Personal data from the source template has been removed.
+% Compile with pdfLaTeX / latexmk.
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{libertinus}
+\usepackage[left=1.15cm,right=1.15cm,top=1cm,bottom=1cm]{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{setspace}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setstretch{1.05}
+\urlstyle{same}
+
+\definecolor{accent}{HTML}{1F355A}
+\definecolor{textgray}{HTML}{20242A}
+\color{textgray}
+
+\titleformat{\section}
+  {\fontsize{11pt}{11.8pt}\selectfont\bfseries\scshape\color{accent}}
+  {}
+  {0pt}
+  {}
+  [\vspace{-0.28em}\color{accent}\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{2.5pt}
+
+\setlist[itemize]{
+  leftmargin=1.35em,
+  itemsep=1pt,
+  topsep=1.7pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\newcommand{\datedline}[2]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    #1 & \textit{#2}
+  \end{tabularx}%
+}
+
+\newcommand{\roleentry}[3]{%
+  \datedline{{\fontsize{10.3pt}{11.2pt}\selectfont\textbf{#1}}}{#3}\vspace{1.25pt}
+  \textit{#2}\par\vspace{1.25pt}
+}
+
+\newcommand{\projectline}[1]{%
+  \textbf{Project:} \textit{#1}\par\vspace{1.5pt}
+}
+
+\newcommand{\puzzleline}[1]{%
+  \textbf{Research Puzzle:} #1\par\vspace{1.8pt}
+}
+
+\newcommand{\entryspace}{\vspace{3.75pt}}
+
+\newcommand{\paperentry}[1]{%
+  \hangindent=1.5em\hangafter=1 #1\par
+}
+
+\begin{document}
+\fontsize{10.2pt}{11.3pt}\selectfont
+\begin{center}{\fontsize{19pt}{20pt}\selectfont\bfseries Mei Tan}\par\small Fictional demonstration draft\end{center}
+\section{Education}
+\datedline{\textbf{Northbridge University}}{2024--2028}
+BA Politics; second-year undergraduate.
+\section{Research Interests}
+Migration and local integration policy.
+\section{Selected Coursework}
+\textbf{Council integration policies} --- course essay\par
+Compared two councils' integration policies using council documents. 2,500 words; mark: 72.
+\section{Methods and Software}
+Comparative document analysis applied in coursework. R: introductory exposure through one tutorial.
+\section{Community Service}
+\datedline{\textbf{Food-bank volunteer}}{2025}
+Volunteered weekly.
+\end{document}

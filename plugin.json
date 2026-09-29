@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "academic-cv-editor",
+  "version": "0.2.0",
+  "description": "Review, rewrite, tailor, and render credible research-oriented academic CVs in English by default.",
+  "homepage": "https://github.com/sebastianmuybien1111-pixel/Academic-CV-Skill",
+  "repository": "https://github.com/sebastianmuybien1111-pixel/Academic-CV-Skill",
+  "license": "MIT",
+  "keywords": [
+    "academic CV",
+    "research",
+    "graduate admissions",
+    "LaTeX"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Academic CV Editor",
+        "shortDescription": "Review and create credible academic CVs in English.",
+        "longDescription": "Review, rewrite, tailor, and render academic CVs for research opportunities, PhD applications, scholarships, and conferences. Preserve factual status and academic nuance; use the included LaTeX template when requested.",
+        "category": "Productivity",
+        "capabilities": [
+          "Review academic CVs",
+          "Rewrite and tailor CVs",
+          "Render LaTeX CVs"
+        ],
+        "defaultPrompt": [
+          "Review my academic CV for a PhD application and flag factual or status issues.",
+          "Rewrite my research CV in English without inventing achievements.",
+          "Tailor my CV for this research assistant role and render it with the included LaTeX template."
+        ],
+        "brandColor": "#1F355A",
+        "composerIcon": "./assets/logo.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}
