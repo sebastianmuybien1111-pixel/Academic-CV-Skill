@@ -1,0 +1,17 @@
+interface:
+  display_name: academic cv editor
+  short_description: Review, rewrite, tailor, and render research-oriented academic
+    CVs for undergraduate, master's, and early-career researchers. Use when a user
+    wants an academic CV audited, edited, tailored for PhD/RA/scholarship/conference
+    use, or converted into the bundled LaTeX template. Prioritizes research identity,
+    factual credibility, methodological precision, and academic substance over generic
+    corporate résumé conventions.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
